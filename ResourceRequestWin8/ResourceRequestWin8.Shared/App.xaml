@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="ResourceRequestWin8.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ResourceRequestWin8">
+
+</Application>

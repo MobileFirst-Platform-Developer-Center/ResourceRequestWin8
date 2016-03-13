@@ -1,0 +1,48 @@
+﻿<!--
+    Copyright 2016 IBM Corp.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<Page
+    x:Class="ResourceRequestWin8.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ResourceRequestWin8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFFBFAFA">
+
+        <Border x:Name="ConsolePanel" Background="#FFFBFAFA">
+            <TextBlock x:Name="Console" HorizontalAlignment="Left" Margin="454,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="635" Width="865" Foreground="#FF383737" FontSize="30" FontFamily="Segoe WP"  DoubleTapped="ClearConsole"/>
+        </Border>
+
+        <Rectangle Fill="#FF3880C2" HorizontalAlignment="Left" Height="916" VerticalAlignment="Top" Width="397" Margin="0,0,0,-148"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,9,0,0" TextWrapping="Wrap" Text="ResourceRequest" VerticalAlignment="Top" Height="70" Width="397" Foreground="White" TextAlignment="Center" FontSize="30" FontFamily="Segoe WP SemiLight"/>
+        
+        <TextBox x:Name="firstname" HorizontalAlignment="Left" Margin="5,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385" PlaceholderText="First Name" FontSize="20" Height="45" FontFamily="Segoe WP"/>
+        <TextBox x:Name="middlename" HorizontalAlignment="Left" Margin="5,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385" PlaceholderText="Middle Name" FontSize="20" Height="45"/>
+        <TextBox x:Name="lastname" HorizontalAlignment="Left" Margin="5,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385" PlaceholderText="Last Name" FontSize="20" Height="45"/>
+        <TextBox x:Name="age" HorizontalAlignment="Left" Margin="5,266,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385" PlaceholderText="Age" FontSize="20" Height="45"/>
+        <TextBox x:Name="date" HorizontalAlignment="Left" Margin="5,321,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385" PlaceholderText="Date" FontSize="20" Height="45"/>
+        <TextBox x:Name="height" HorizontalAlignment="Left" Margin="5,375,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385" PlaceholderText="Height" FontSize="20" Height="45"/>
+        
+
+        <Button Content="Submit" x:Name="Submit" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,482,0,0" FontSize="22" Background="#FF3880C2" Foreground="#FFF9FBFF" Height="70" Width="310" FontWeight="Normal" FontFamily="Segoe UI Semilight" Click="Submit_Click" />
+
+        <Image HorizontalAlignment="Left" Height="100" Margin="148,593,0,0" VerticalAlignment="Top" Width="100" Source="Assets/icon.png" Opacity="0.7"/>
+        <TextBlock x:Name="ConsoleTab" HorizontalAlignment="Left" Margin="453,19,0,0" TextWrapping="Wrap" Text="Console" VerticalAlignment="Top" Height="45" Width="129" FontSize="27" FontFamily="Segoe UI Semilight" TextAlignment="Center" Tapped="ShowConsole" Foreground="DodgerBlue"/>
+       
+    </Grid>
+</Page>
